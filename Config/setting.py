@@ -34,11 +34,11 @@ else:
 
 DATABASES = {
     "default": {
-        "TYPE": DB_TYPE,  # TYPE SSDB/MONGODB if use redis, only modify the host port, the type should be SSDB
-        "HOST": DB_HOST,
-        "PORT": DB_PORT,
+        "TYPE": 'SSDB',  # TYPE SSDB/MONGODB if use redis, only modify the host port, the type should be SSDB
+        "HOST": '127.0.0.1',
+        "PORT": 6379,
         "NAME": "proxy",
-        "PASSWORD": DB_PASSWORD
+        "PASSWORD": ''
 
     }
 }
@@ -46,15 +46,15 @@ DATABASES = {
 # register the proxy getter function
 
 PROXY_GETTER = [
-    "freeProxy01",
-    "freeProxy02",
-    "freeProxy03",
-    "freeProxy04",
-    "freeProxy05",
-    "freeProxy06",
-    "freeProxy07",
-    "freeProxy08",
-    "freeProxy09",
+    # "freeProxy01",
+    # "freeProxy02",
+    # "freeProxy03",
+    # "freeProxy04",
+    # "freeProxy05",
+    # "freeProxy06",
+    # "freeProxy07",
+    # "freeProxy08",
+    # "freeProxy09",
 ]
 
 # # API config http://127.0.0.1:5010
